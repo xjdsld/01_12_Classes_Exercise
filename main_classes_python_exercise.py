@@ -7,8 +7,7 @@ class Mail_Method:
 class Email(Mail_Method):
   def __init__(self):
     self._communication_protocol = 'IMAP'
-    self.communication_id_number = random.randint(10, 99)
-    print(self.communication_id_number)
+    self.__communication_id_number = random.randint(10, 99)
   
   def mail(self, address):
     print(f"You're sending an e-mail message to {address}")
